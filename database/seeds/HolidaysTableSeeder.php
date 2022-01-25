@@ -23,9 +23,11 @@ class HolidaysTableSeeder extends Seeder
             $newHoliday->piscina = $faker->boolean(20);
             $newHoliday->volo_incluso = $faker->boolean(50);
             $newHoliday->descrizione = $faker->text(150);
-            $newHoliday->prezzo = $faker->numberBetween(20,5000);
+            $newHoliday->prezzo = $faker->numberBetween(20,500);
             $newHoliday->ultima_recensione = $faker->text(150);
             
+            // SAVE OBBLIGATORIO SE NO NON CARICA NULLA
+            $newHoliday->save();
         }
     }
 }
