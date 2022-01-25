@@ -35,8 +35,8 @@
                <td>{{$holiday->piscina}}</td>
                <td>{{$holiday->volo_incluso}}</td>
                <td>{{$holiday->descrizione}}</td>
-               <td>{{$holiday->prezzo . " €"}}</td>
-               <td>{{$holiday->ultima_recensione . " €"}}</td>
+               <td>{{$holiday->prezzo . "€"}}</td>
+               <td>{{$holiday->ultima_recensione . "€"}}</td>
 
             @endforeach
          </tbody>
